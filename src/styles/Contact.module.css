@@ -96,22 +96,3 @@
     font-size: 1rem;
   }
 }
-
-@media (max-width: 480px) {
-  .contact {
-    padding: var(--spacing-xs);
-  }
-  .heading {
-    font-size: 1.5rem;
-  }
-  .details {
-    font-size: 0.9rem;
-  }
-  .item {
-    flex-direction: column;
-    gap: 4px;
-  }
-  .icon {
-    font-size: 1rem;
-  }
-}

@@ -37,11 +37,13 @@
 @media (max-width: 768px) {
   .contact {
     padding-top: 90px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .contact {
     padding-top: 70px;
+    margin-bottom: 10px;
   }
 }

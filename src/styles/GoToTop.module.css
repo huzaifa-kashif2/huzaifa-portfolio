@@ -19,10 +19,9 @@
   transform: translateY(-3px);
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .goToTop {
     padding: 10px;
-    font-size: 1.1rem;
     bottom: 18px;
     right: 18px;
   }
@@ -31,7 +30,6 @@
 @media (max-width: 768px) {
   .goToTop {
     padding: 8px;
-    font-size: 1rem;
     bottom: 16px;
     right: 16px;
   }
@@ -40,8 +38,7 @@
 @media (max-width: 480px) {
   .goToTop {
     padding: 6px;
-    font-size: 0.9rem;
     bottom: 14px;
     right: 14px;
   }
-}
+} */

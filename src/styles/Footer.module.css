@@ -21,6 +21,7 @@
   gap: var(--spacing-lg);
   font-size: 1.4rem;
   align-items: center;
+  margin-right: 50px;
 }
 
 .socials a {
@@ -30,6 +31,15 @@
 
 .socials a:hover {
   color: var(--color-accent);
+}
+
+.socials a[aria-label="WhatsApp"] {
+  color: #25D366;
+  transition: color 0.3s ease;
+}
+
+.socials a[aria-label="WhatsApp"]:hover {
+  color: var(--color-accent) !important; /* Slightly darker green on hover */
 }
 
 .topButton {
