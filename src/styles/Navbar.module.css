@@ -1,0 +1,141 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-primary-dark);
+  color: var(--color-text-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xxl);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.navLinks li {
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  position: relative;
+}
+
+.navLinks li a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: var(--color-accent);
+}
+
+.active {
+  color: var(--color-accent) !important;
+  border-bottom: var(--border-thin) solid var(--color-accent);
+  padding-bottom: var(--spacing-xs);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: var(--color-text-light);
+  transition: all 0.3s ease;
+}
+
+.barActive {
+  background: var(--color-accent);
+}
+
+@media (max-width: 1050px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: var(--color-primary-dark);
+    width: 200px;
+    padding: var(--spacing-md);
+    gap: var(--spacing-lg);
+    transition: right 0.3s ease-in-out;
+  }
+
+  .showMenu {
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .navLinks {
+    width: 180px;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-md);
+  }
+
+  .navLinks li {
+    font-size: 0.9rem;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 2.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .navLinks {
+    width: 160px;
+    padding: var(--spacing-xs);
+    gap: var(--spacing-sm);
+  }
+
+  .navLinks li {
+    font-size: 0.85rem;
+  }
+
+  .hamburger span {
+    width: 18px;
+    height: 2px;
+  }
+}

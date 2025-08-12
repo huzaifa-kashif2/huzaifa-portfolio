@@ -1,0 +1,47 @@
+.app {
+  background-color: var(--color-primary-dark);
+}
+
+.section {
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  min-height: 100vh;
+}
+
+.sectionAlt {
+  background-color: var(--color-primary-medium);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+}
+
+.contact {
+  padding-top: 125px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding-top: 70px;
+  }
+}
