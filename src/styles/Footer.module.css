@@ -39,7 +39,7 @@
 }
 
 .socials a[aria-label="WhatsApp"]:hover {
-  color: var(--color-accent) !important; /* Slightly darker green on hover */
+  color: var(--color-accent) !important;
 }
 
 .topButton {

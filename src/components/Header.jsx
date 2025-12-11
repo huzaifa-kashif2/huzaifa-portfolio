@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import styles from '../styles/Header.module.css'
 import profile from '../assets/logo.jpg'
-import CV from "../assets/Huzaifa_CV.pdf"
+import CV from "../assets/Muhammad Huzaifa Bin Kashif CV.pdf"
 
 const Header = () => {
   return (

@@ -18,27 +18,3 @@
   background: var(--color-accent-hover);
   transform: translateY(-3px);
 }
-
-/* @media (max-width: 1024px) {
-  .goToTop {
-    padding: 10px;
-    bottom: 18px;
-    right: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .goToTop {
-    padding: 8px;
-    bottom: 16px;
-    right: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .goToTop {
-    padding: 6px;
-    bottom: 14px;
-    right: 14px;
-  }
-} */

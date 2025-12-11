@@ -79,7 +79,7 @@
     right: -100%;
     flex-direction: column;
     background: var(--color-primary-dark);
-    width: 100vw; /* Full viewport width */
+    width: 100vw;
     max-width: 100vw;
     padding: var(--spacing-md);
     gap: var(--spacing-lg);
@@ -103,7 +103,7 @@
   }
 
   .navLinks {
-    width: 100vw; /* Full viewport width */
+    width: 100vw; 
     max-width: 100vw;
     padding: var(--spacing-sm);
     gap: var(--spacing-md);
@@ -130,7 +130,7 @@
   }
 
   .navLinks {
-    width: 100vw; /* Full viewport width */
+    width: 100vw;
     max-width: 100vw;
     padding: var(--spacing-xs);
     gap: var(--spacing-sm);

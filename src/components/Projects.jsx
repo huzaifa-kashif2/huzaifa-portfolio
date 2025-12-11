@@ -8,6 +8,7 @@ import {
   SiDotnet,
   SiCplusplus,
   SiExpress,
+  SiNextdotjs 
 } from "react-icons/si";
 import SQL from "../assets/sql.svg";
 
@@ -18,65 +19,64 @@ const techIconMap = {
   JavaScript: <SiJavascript color="#F7DF1E" />,
   "CSS Modules": <SiCss3 color="#1572B6" />,
   Java: <FaJava color="black" />,
-  SQL: (
-    <img src={SQL} alt="SQL" style={{ width: "1.2rem", height: "1.2rem" }} />
-  ),
+  SQL: <img src={SQL} alt="SQL" style={{ width: "1.2rem", height: "1.2rem" }} />,
   "Java Swing": <FaJava color="black" />,
   "C++": <SiCplusplus color="#00599C" />,
   ".NET": <SiDotnet color="#512bd4" />,
   Express: <SiExpress color="#000000" />,
-  Database: <FaDatabase color="#4DB33D" />, // generic DB icon fallback
+  Database: <FaDatabase color="#4DB33D" />,
+  Next: <SiNextdotjs color="black" />,
+"Next.js": <SiNextdotjs color="black" />,
+
 };
 
 const projects = [
+   {
+  title: "PhishGuard",
+  description:
+    "A phishing detection platform using AES-based authentication, GEMINI API, lightweight model training, and encrypted password vault.",
+  tech: ["Next.js", "Node.js", "Express", "MongoDB"],
+  link: "#",
+},
+{
+  title: "Notelify",
+  description:
+    "A note and task management platform with plagiarism detection and secure user authentication.",
+  tech: ["Next.js", "Node.js", "Express", "MongoDB"],
+  link: "#",
+},
   {
     title: "Softec Management System",
-    description:
-      "A full-stack MERN (MongoDB, Express, React, Node.js) management system.",
+    description: "A full-stack MERN (MongoDB, Express, React, Node.js) management system.",
     tech: ["MongoDB", "Express", "React", "Node.js"],
     link: "#",
   },
   {
     title: "NIMBUS - A Weather App",
-    description:
-      "A Java application with SQL database using Java Swing framework for the UI.",
+    description: "A Java application with SQL database using Java Swing framework for the UI.",
     tech: ["Java", "SQL", "Java Swing"],
     link: "#",
   },
   {
     title: "LESCO Billing System",
-    description:
-      "A Java-based billing system with SQL backend and Java Swing for UI.",
+    description: "A Java-based billing system with SQL backend and Java Swing for UI.",
     tech: ["Java", "SQL", "Java Swing"],
     link: "#",
   },
   {
     title: "Library Management System",
-    description:
-      "A C++ application integrated with SQL database and .NET framework for UI and services.",
+    description: "A C++ application integrated with SQL database and .NET framework for UI and services.",
     tech: ["C++", "SQL", ".NET"],
     link: "#",
   },
   {
     title: "Restaurant Management System",
-    description:
-      "C++ and .NET based system with SQL backend to manage restaurant operations.",
+    description: "C++ and .NET based system with SQL backend to manage restaurant operations.",
     tech: ["C++", "SQL", ".NET"],
     link: "#",
   },
-  {
-    title: "ImpactX Clone Website",
-    description: "A clone website built using ReactJS and NodeJS.",
-    tech: ["React", "Node.js"],
-    link: "#",
-  },
-  {
-    title: "PetLounge Clone Website",
-    description:
-      "Multi-page pet services website with booking and contact features built with ReactJS and NodeJS.",
-    tech: ["React", "Node.js"],
-    link: "#",
-  },
+ 
+
 ];
 
 const Projects = () => {
@@ -96,7 +96,6 @@ const Projects = () => {
                 </li>
               ))}
             </ul>
-            
           </div>
         ))}
       </div>

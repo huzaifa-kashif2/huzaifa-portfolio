@@ -13,7 +13,6 @@ import GoToTop from "./components/GoToTop";
 import Footer from "./components/Footer";
 
 const sections = [
-  { id: "about", Component: About, alt: false },
   { id: "projects", Component: Projects, alt: true },
   { id: "skills", Component: Skills, alt: false },
   { id: "experience", Component: Experience, alt: true },
