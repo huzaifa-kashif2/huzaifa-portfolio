@@ -3,7 +3,6 @@ import { Link } from 'react-scroll'
 import styles from '../styles/Navbar.module.css'
 
 const navLinks = [
-  { name: 'About', to: 'about' },
   { name: 'Projects', to: 'projects' },
   { name: 'Skills', to: 'skills' },
   { name: 'Experience', to: 'experience' },
